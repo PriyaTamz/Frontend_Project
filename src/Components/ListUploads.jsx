@@ -49,9 +49,9 @@ function ListAgents({ refresh }) {
                                     <tr key={index}>
                                         <td>{task.agentId?.email}</td>
                                         <td>{task.agentId?.mobileNumber}</td>
-                                        <td>{task.firstName}</td>
-                                        <td>{task.phone}</td>
-                                        <td>{task.notes}</td>
+                                        <td>{task.FirstName}</td>
+                                        <td>{task.Phone}</td>
+                                        <td>{task.Notes}</td>
                                     </tr>
                                 ))}
                             </tbody>
