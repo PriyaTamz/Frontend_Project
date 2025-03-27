@@ -22,7 +22,7 @@ function UploadList() {
         formData.append("file", file);
 
         try {
-            const response = await axios.post("http://localhost:3001/lists/upload", formData, {
+            const response = await axios.post("https://backend-project-249a.onrender.com/lists/upload", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

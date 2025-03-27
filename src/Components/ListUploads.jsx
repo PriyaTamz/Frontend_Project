@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import authServices from '../services/authService';
 import './ListUploads.css';
 
-function ListAgents() {
+function ListAgents({ refresh }) {
     const [agents, setAgents] = useState([]);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ function ListAgents() {
         };
 
         fetchAgents();
-    }, []);
+    }, [refresh]);
 
     const groupedAgents = agents.reduce((acc, item) => {
         const agentName = item.agentId?.name || "Unknown";
